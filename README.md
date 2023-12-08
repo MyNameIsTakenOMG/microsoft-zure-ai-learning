@@ -318,3 +318,8 @@ Machine learning has its origins in statistics and mathematical modeling of data
 
  - Describe image generation capabilities of Azure OpenAI Service
    - Image generation models can take a prompt, a base image, or both, and create something new. These generative AI models can create both realistic and artistic images, change the layout or style of an image, and create variations on a provided image.
+
+## Describe features of Document Intelligence and Knowledge Mining workloads on Azure
+### Identify capabilities of Document Intelligence
+### Identify features of Knowledge Mining workloads
+### Identify capabilities of Azure AI Search
