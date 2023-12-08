@@ -162,21 +162,81 @@ Machine learning has its origins in statistics and mathematical modeling of data
 
 ## Describe features of computer vision workloads on Azure (15–20%)
 ### Identify common types of computer vision solution
- - Identify features of image classification solutions
- 
- - Identify features of object detection solutions
-
+ - **Key words:** kernels,filter, convolutional filtering, convolutional neural network (CNN), softmax, loss, Transformers, Multi-modal models.
+ - Identify features of image classification solutions: categorize images into predefined classes or labels.
+   - Convolutional Neural Networks (CNNs)
+   - Transfer Learning
+   - Multi-Class Classification
+   - Model Monitoring and Maintenance
+   - Support for Custom Models
+ - Identify features of object detection solutions: identify and locate objects within an image or video frame.
+   - Convolutional Neural Networks (CNNs)
+   - Region Proposal Networks (RPN)
+   - Bounding Box Regression
+   - Multi-Class Detection
+   - Transfer Learning
+   - Robustness to Occlusion (partially visible)
+   - Handling Multiple Object Instances
  - Identify features of optical character recognition solutions
+   - Text Extraction
+   - Document Layout Analysis
+   - Handwritten Text Recognition
+   - Printed Text Recognition
+   - Multi-language Support
+   - Table and Form Extraction
+   - Accuracy and Precision
+   - Character Segmentation
+   - Customizable and Trainable Models
+   - Security and Privacy
 
  - Identify features of facial detection and facial analysis solutions
+   - **facial detection**
+     - Face Detection
+     - Real-time Detection
+     - Multi-face Detection
+     - Accuracy and Precision
+     - Scale and Pose Variation
+     - Illumination and Lighting Robustness
+     - Age and Gender Estimation
+   - **facial analysis**
+     - Expression Analysis
+     - Facial Recognition
+     - Facial Similarity Matching
+     - Facial Attribute Analysis
+     - Facial Biometrics
+     - Privacy Protection Measures
+     - Anti-spoofing Measures
 ### Identify Azure tools and services for computer vision tasks
  - Describe capabilities of the Azure AI Vision service
+   - Optical character recognition (OCR) - extracting text from images.
+   - Generating captions and descriptions of images.
+   - Detection of thousands of common objects in images.
+   - Tagging visual features in images
 
  - Describe capabilities of the Azure AI Face detection service
+   - Face Detection
+   - Face Identification
+   - Face Verification
+   - Age and Gender Estimation
+   - Glasses Detection
+   - Facial Landmarks  
 
- - Describe capabilities of the Azure AI Video Indexer service
+ - Describe capabilities of the Azure AI Video Indexer service:  analyzing and extracting insights from videos.
+   - Automatic Transcription
+   - Face Detection and Recognition
+   - Object and Scene Detection
+   - Visual Content Moderation
+   - OCR (Optical Character Recognition)
+   - Custom Labels and Models
+   - Integration with Azure Services
+   - Sentiment Analysis
 
 ## Describe features of Natural Language Processing (NLP) workloads on Azure (15–20%)
+### keywords
+ - Stemming
+ - n-gram
+ - normalization
+ - Stopword removal 
 ### Identify features of common NLP Workload Scenarios
  - Identify features and uses for key phrase extraction: identifying and extracting the most important phrases or terms from a text.
    - Identifying Important Terms, Frequency Analysis, Summarization Assistance, Multi-lingual Support
