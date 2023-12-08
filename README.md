@@ -321,5 +321,4 @@ Machine learning has its origins in statistics and mathematical modeling of data
 
 ## Describe features of Document Intelligence and Knowledge Mining workloads on Azure
 ### Identify capabilities of Document Intelligence
-### Identify features of Knowledge Mining workloads
-### Identify capabilities of Azure AI Search
+### Identify features of Knowledge Mining workloads and Azure AI Search
