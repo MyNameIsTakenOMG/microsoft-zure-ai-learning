@@ -82,37 +82,88 @@ Machine learning has its origins in statistics and mathematical modeling of data
    - The number of ice creams sold on a given day, based on the temperature, rainfall, and windspeed.
    - The selling price of a property based on its size in square feet, the number of bedrooms it contains, and socio-economic metrics for its location.
    - The fuel efficiency (in miles-per-gallon) of a car based on its engine size, weight, width, height, and length.
- 
+   - **training algorithms:**
+     - linear regression.(or some other algorithms)
+   - **Evaluation:**
+     - Mean Absolute Error (MAE)
+     - Mean Squared Error (MSE)
+     - Root Mean Squared Error (RMSE)
+     - Coefficient of determination (R2)
+     - Area Under the Curve (AUC) -- using received operator characteristic (ROC) curve
+       
  - Identify classification machine learning scenarios: Classification is a form of supervised machine learning in which the label represents a categorization, or class. There are two common classification scenarios, Binary classification and Multiclass classification.
    - Whether a patient is at risk for diabetes based on clinical metrics like weight, age, blood glucose level, and so on. (**Binary**)
    - Whether a bank customer will default on a loan based on income, credit history, age, and other factors. (**Binary**)
    - Whether a mailing list customer will respond positively to a marketing offer based on demographic attributes and past purchases. (**Binary**)
    - The species of a penguin (Adelie, Gentoo, or Chinstrap) based on its physical measurements. (**Multiclass**)
    - The genre of a movie (comedy, horror, romance, adventure, or science fiction) based on its cast, director, and budget. (**Multilabel**)
+   - **training algorithms(Binary):**
+     - logistic regression(S-shaped)
+   - **training algorithms(Multiclass):**
+     - One-vs-Rest (OvR) algorithms
+     - Multinomial algorithms
+   - **Evaluation(Binary):**
+     - Accuracy
+     - Recall
+     - Precision
+     - F1-score
+     - Area Under the Curve (AUC) -- using received operator characteristic (ROC) curve
+   - **Evaluation(Multiclass):**
+     - overall Accuracy
+     - overall Recall
+     - overall Precision
+     - overall F1-score
 
  - Identify clustering machine learning scenarios: The most common form of unsupervised machine learning is clustering. A clustering algorithm identifies similarities between observations based on their features, and groups them into discrete clusters. In some cases, clustering is used to determine the set of classes that exist before training a classification model.
    - Group similar flowers based on their size, number of leaves, and number of petals.
    - Identify groups of similar customers based on demographic attributes and purchasing behavior.
+   - **Evaluation:** Average distance to cluster center, Average distance to other center, Maximum distance to cluster center, Silhouette.
 
  - Identify features of deep learning techniques: Deep learning is an advanced form of machine learning that tries to emulate the way the human brain learns. The key to deep learning is the creation of an artificial neural network that simulates electrochemical activity in biological neurons by using mathematical functions.
    - made up of multiple layers of neurons - essentially defining a deeply nested function.
    - The weights in a neural network are central to how it calculates predicted values for labels. During the training process, the model learns the weights that will result in the most accurate predictions.
+   - feature vector
+   - deep neural networks (DNNs)
+   - using a softmax or similar function to calculate the probability distribution
+   - A loss function is used to compare the predicted ŷ values to the known y values and aggregate the difference (which is known as the loss)
+   - optimization technique can vary, but usually involves a gradient descent approach in which each weight is increased or decreased to minimize the loss.
+   - The changes to the weights are backpropagated to the layers in the network, replacing the previously used values.
+   - The process is repeated over multiple iterations (known as epochs) until the loss is minimized and the model predicts acceptably accurately.
+
 ### Describe core machine learning concepts
  - Identify features and labels in a dataset for machine learning
-
+   -  the observations include the observed attributes or features of the thing being observed
+   -  the known value of the thing you want to train a model to predict (known as the label).
+     
  - Describe how training and validation datasets are used in machine learning
+   - training: an algorithm is applied to the data to try to determine a relationship between the features and the label, and generalize that relationship as a calculation that can be performed on x to calculate y. The whole process is iterative and the parameters of the algorithm are adjusted iteratively.
+   - validation: After each training iteration or epoch, the model is evaluated on the validation dataset. The validation performance helps in making decisions such as stopping training when the model starts to overfit or adjusting hyperparameters to improve generalization.
+   
 ### Describe Azure Machine Learning capabilities
  - Describe capabilities of Automated machine learning
-
+   - easy to run multiple training jobs with different algorithms and parameters to find the best model for your data.
  - Describe data and compute services for data science and machine learning
-
+   - Azure Machine Learning
+   - Azure Databricks
+   - Azure Synapse Analytics
+   - Azure Data Factory
+   - Azure HDInsight
+   - Azure AI Search
  - Describe model management and deployment capabilities in Azure Machine Learning
-
+   - Model Registration
+   - Model Deployment
+   - Environment Management
+   - Automated Machine Learning (AutoML) Deployment
+   - Model Monitoring and Logging
+   - Scalability and Load Balancing
+   - Integration with Azure DevOps
+   - Role-Based Access Control (RBAC)
+   - Continuous Integration and Continuous Deployment (CI/CD)
 
 ## Describe features of computer vision workloads on Azure (15–20%)
 ### Identify common types of computer vision solution
  - Identify features of image classification solutions
-
+ 
  - Identify features of object detection solutions
 
  - Identify features of optical character recognition solutions
@@ -124,35 +175,86 @@ Machine learning has its origins in statistics and mathematical modeling of data
  - Describe capabilities of the Azure AI Face detection service
 
  - Describe capabilities of the Azure AI Video Indexer service
+
 ## Describe features of Natural Language Processing (NLP) workloads on Azure (15–20%)
 ### Identify features of common NLP Workload Scenarios
- - Identify features and uses for key phrase extraction
+ - Identify features and uses for key phrase extraction: identifying and extracting the most important phrases or terms from a text.
+   - Identifying Important Terms, Frequency Analysis, Summarization Assistance, Multi-lingual Support
+   - Document Summarization, Content Tagging, Content Recommendation, Sentiment Analysis
+ - Identify features and uses for entity recognition: identifying and classifying entities (such as names of people, organizations, locations, dates, etc.) in a text.
+   - Contextual Understanding, Recognition of Various Entity Types, Entity Linking
+   - Information Extraction, Question Answering Systems, Sentiment Analysis, Chatbots and Virtual Assistants, Named Entity Disambiguation
 
- - Identify features and uses for entity recognition
+ - Identify features and uses for sentiment analysis: determining the sentiment expressed in a piece of text—whether it's positive, negative, or neutral.
+   - Binary and Multiclass Sentiment Classification, Emotion Detection, Context Awareness, Opinion Summarization
 
- - Identify features and uses for sentiment analysis
+ - Identify features and uses for language modeling: predicting the probability of a sequence of words or characters in a given context.
+   - Contextual Embeddings, Generative Text Completion, Zero-shot Learning, Multimodal Language Models, Bidirectional Modeling, Probabilistic Predictions
+   - Text Generation, Question Answering, Summarization, Spell Checking and Auto-correction, Conversational Agents and Chatbots
 
- - Identify features and uses for language modeling
+ - Identify features and uses for speech recognition and synthesis: deal with understanding and generating spoken language.
+   - **Speech Recognition**:
+     - Automatic Speech Recognition (ASR), Speaker Identification, Noise Reduction, Language Adaptation, Keyword Spotting
+     - Voice Assistants, Transcription Services, Voice Search, Interactive Voice Response (IVR) Systems
+   - **Speech Synthesis**:
+     - Text-to-Speech, Emotional and Expressive Synthesis, Voice Cloning, Pitch and Rate Control
+     - Voiceovers for Media Content, Interactive Learning Applications, Notification Systems, Entertainment and Gaming
 
- - Identify features and uses for speech recognition and synthesis
-
- - Identify features and uses for translation
+ - Identify features and uses for translation: converting text from one language to another.
+   - Multilingual Support, Bidirectional Translation, Speech-to-Text Translation
+   - Global Content Localization, Language Learning, Collaboration and Knowledge Sharing, News and Media Translation
+   
 ### Identify Azure tools and services for NLP workloads
  - Describe capabilities of the Azure AI Language service
+   - Entity recognition and linking
+   - Language detection
+   - Sentiment analysis and opinion mining
+   - Key phrase extraction
 
  - Describe capabilities of the Azure AI Speech service
+   - The Speech to text API: Real-time transcription, Batch transcription
+   - The Text to speech API: Speech synthesis voices
+   - both APIs support a variety of languages
 
  - Describe capabilities of the Azure AI Translator service
+   - Text Translation
+   - Speech Translation
+   - Language Detection
+   - Batch Translation
+   - Document Translation
+   - Azure AI Search Integration
+
 ## Describe features of generative AI workloads on Azure (15–20%)
 ### Identify features of generative AI solutions
- - Identify features of generative AI models
-
+ - Identify features of generative AI models:  powered by large language models (LLMs). Take in natural language input, and return appropriate responses in a variety of formats such as natural language, images, or code.
+   - Generative Capabilities
+   - Unsupervised Learning
+   - Transfer Learning
+   - Variability and Creativity
+   - Conditional Generation
+   - Autoencoders and Latent Representations
+   - GANs (Generative Adversarial Networks)
+   - Variational Autoencoders (VAEs)
+   - Text Generation
+   - Image-to-Image Translation
+   
  - Identify common scenarios for generative AI
+   - Natural language generation
+   - Image generation
+   - Code generation
 
- - Identify responsible AI considerations for generative AI
+ - Identify responsible AI considerations for generative AI: Plan a responsible generative AI solution
+   - Identify potential harms that are relevant to your planned solution.
+   - Measure the presence of these harms in the outputs generated by your solution.
+   - Mitigate the harms at multiple layers in your solution to minimize their presence and impact, and ensure transparent communication about potential risks to users.
+   - Operate the solution responsibly by defining and following a deployment and operational readiness plan.
+
 ### Identify capabilities of Azure OpenAI Service
  - Describe natural language generation capabilities of Azure OpenAI Service
+   - Azure OpenAI's natural language models are able to take in natural language and are excellent at both understanding and creating natural language.
 
  - Describe code generation capabilities of Azure OpenAI Service
+   - GPT models are able to take natural language or code snippets and translate them into code. The OpenAI GPT models are proficient in over a dozen languages, such as C#, JavaScript, Perl, PHP, and is most capable in Python. GPT models have been trained on both natural language and billions of lines of code from public repositories. The models are able to generate code from natural language instructions such as code comments, and can suggest ways to complete code functions.
 
  - Describe image generation capabilities of Azure OpenAI Service
+   - Image generation models can take a prompt, a base image, or both, and create something new. These generative AI models can create both realistic and artistic images, change the layout or style of an image, and create variations on a provided image.
