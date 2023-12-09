@@ -254,6 +254,8 @@ Machine learning has its origins in statistics and mathematical modeling of data
 
  - Identify features and uses for speech recognition and synthesis: deal with understanding and generating spoken language.
    - **Speech Recognition**:
+     - **acoustic model:** converts the audio signal into phonemes (representations of specific sounds).
+     - **language model:** maps phonemes to words, usually using a statistical algorithm that predicts the most probable sequence of words based on the phonemes.
      - Automatic Speech Recognition (ASR), Speaker Identification, Noise Reduction, Language Adaptation, Keyword Spotting
      - Voice Assistants, Transcription Services, Voice Search, Interactive Voice Response (IVR) Systems
    - **Speech Synthesis**:
@@ -321,4 +323,20 @@ Machine learning has its origins in statistics and mathematical modeling of data
 
 ## Describe features of Document Intelligence and Knowledge Mining workloads on Azure
 ### Identify capabilities of Document Intelligence
+- Describe capabilities of document intelligence
+  - extract text, layout, and key-value pairs are known as document analysis. Document analysis provides locations of text on a page identified by bounding box coordinates.
+
+- Identify features of Azure AI Document Intelligence
+  - Prebuilt models - pretrained models that have been built to process common document types such as invoices, business cards, ID documents, and more. These models are designed to recognize and extract specific fields that are important for each document type.
+  - Custom models - can be trained to identify specific fields that are not included in the existing pretrained models.
+  - Document analysis - general document analysis that returns structured data representations, including regions of interest and their inter-relationships.
+
 ### Identify features of Knowledge Mining workloads and Azure AI Search
+- Describe features of Azure AI Search: provides the infrastructure and tools to create search solutions that extract data from various structured, semi-structured, and non-structured documents.
+  - Data from any source: accepts data from any source provided in JSON format, with auto crawling support for selected data sources in Azure.
+  - Full text search and analysis: offers full text search capabilities supporting both simple query and full Lucene query syntax.
+  - AI powered search: has Azure AI capabilities built in for image and text analysis from raw content.
+  - Multi-lingual offers linguistic analysis for 56 languages to intelligently handle phonetic matching or language-specific linguistics. Natural language processors 
+available in Azure AI Search are also used by Bing and Office.
+  - Geo-enabled: supports geo-search filtering based on proximity to a physical location.
+  - Configurable user experience: has several features to improve the user experience including autocomplete, autosuggest, pagination, and hit highlighting.
