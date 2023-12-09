@@ -254,6 +254,7 @@ Machine learning has its origins in statistics and mathematical modeling of data
 
  - Identify features and uses for speech recognition and synthesis: deal with understanding and generating spoken language.
    - **Speech Recognition**:
+     - The model that is used by the Speech to text API, is based on the **Universal Language Model** that was trained by Microsoft. The data for the model is Microsoft-owned and deployed to Microsoft Azure. The model is **optimized** for two scenarios, **conversational and dictation**. You can also create and train your own custom models including acoustics, language, and pronunciation if the pre-built models from Microsoft do not provide what you need.
      - **acoustic model:** converts the audio signal into phonemes (representations of specific sounds).
      - **language model:** maps phonemes to words, usually using a statistical algorithm that predicts the most probable sequence of words based on the phonemes.
      - Automatic Speech Recognition (ASR), Speaker Identification, Noise Reduction, Language Adaptation, Keyword Spotting
