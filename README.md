@@ -269,10 +269,13 @@ Machine learning has its origins in statistics and mathematical modeling of data
    
 ### Identify Azure tools and services for NLP workloads
  - Describe capabilities of the Azure AI Language service
-   - Entity recognition and linking
+   - Entity recognition
+   - Entity linking
+   - Personal identifying information (PII) detection
    - Language detection
    - Sentiment analysis and opinion mining
    - Key phrase extraction
+   - Summarization
 
  - Describe capabilities of the Azure AI Speech service
    - The Speech to text API: Real-time transcription, Batch transcription
